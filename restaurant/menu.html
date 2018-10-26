@@ -7,18 +7,52 @@
 <html>
 	<head>
 		<title>Menu</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
 	</head>
+<style>
+article {
+	float: left;
+	width: 250px;
+	text-align: center;
+	margin-left: 25px;
+	margin-right: 25px;
+}
+#menu {
+	width: 900px;
+	margin: auto;
+	background-color: #f002;
+}
+.clear-float {
+	clear: both;
+}
+b, th {
+	font-size: 1.1em;
+}
+table {
+	margin: 0 auto;
+	width: 30%;
+	border-collapse: collapse;
+}
+td, th {
+	text-align: left;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+tr:nth-child(odd) {
+	background-color: #f001;
+}
+
+</style>
 	<body>
 		<header>
 			<h1>Good Burger</h1>
 		</header>
 
 		<nav>
-			<hr />
-			<p><a href="index.html">Home</a></p>
-			<p><a href="menu.html">Menu</a></p>
-			<p><a href="contact.html">Contact Us</a></p>
-			<hr />
+			<p><a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a></p>
 		</nav>
 
 		<section id="menu">
@@ -45,6 +79,8 @@
 				Served with garlic mashers<br />
 				$10.95</p>
 			</article>
+			<div class="clear-float"></div>
+
 			<article>
 				<p><b>Tenderloin Sandwich and Chips</b><br />
 				Really Hits the Spot!<br />
@@ -70,10 +106,30 @@
 				Served with our famous thick-cut french fries<br />
 				$7.95</p>
 			</article>
+			<div class="clear-float"></div>
+
+			<table>
+				<tr><th colspan=2>Beverages</th></tr>
+				<tr>
+					<td>Root Beer</td>
+					<td>$3.00</td>
+				</tr>
+				<tr>
+					<td>Bottled Water</td>
+					<td>$1.25</td>
+				</tr>
+				<tr>
+					<td>Lemonade</td>
+					<td>$1.00</td>
+				</tr>
+				<tr>
+					<td>Iced Tea</td>
+					<td>$1.25</td>
+				</tr>
+			</table>
 		</section>
 
 		<footer>
-			<hr />
 			<p>123 Fake St, Fakesville, Texas, 12321</p>
 			<p>(123) 456 - 7890</p>
 		</footer>

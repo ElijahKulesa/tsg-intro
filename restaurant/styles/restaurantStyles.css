@@ -1,0 +1,31 @@
+header, footer {
+	text-align: center;
+}
+
+footer {
+	border-top: 1px black solid;
+	margin-top: 10px;
+}
+
+nav {
+	border-top: 1px black solid;
+	border-bottom: 1px black solid;
+	margin-bottom: 10px;
+}
+
+nav a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+nav a:visited {
+	color: #f00;
+}
+
+nav a:hover {
+	font-weight: bold;
+}
+
+nav a:active {
+	text-decoration: none;
+}

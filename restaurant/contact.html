@@ -7,6 +7,48 @@
 <html>
 	<head>
 		<title>Contact Us</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+<style>
+input, label, legend, textarea, select, fieldset {
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+input, textarea, select {
+	width: 150px;
+}
+fieldset input {
+	width: auto;
+	margin-left: 0px;
+}
+.clear-float {
+	clear: both;
+}
+form {
+	width: 900px;
+	margin: 0 auto;
+}
+fieldset {
+	border: none;
+}
+label, legend {
+	width: 400px;
+	margin-right: 10px;
+	text-align: right;
+}
+fieldset label {
+	width: auto;
+	margin-right: 15px;
+}
+#submit {
+	margin-left: 400px;
+	width: 100px;
+}
+.required {
+	font-weight: bold;
+}
+
+</style>
 	</head>
 	<body>
 		<header>
@@ -14,24 +56,28 @@
 		</header>
 
 		<nav>
-			<hr />
-			<p><a href="index.html">Home</a></p>
-			<p><a href="menu.html">Menu</a></p>
-			<p><a href="contact.html">Contact Us</a></p>
-			<hr />
+			<p><a href="index.html">Home</a>
+			<a href="menu.html">Menu</a>
+			<a href="contact.html">Contact Us</a></p>
 		</nav>
 
 		<form action="submit.html" method="POST">
-			<label for="name">Name:</label>
+			<label for="name" class="required">Name:</label>
 			<input type="text" id="name" name="name" /> <br />
+			
+			<div class="clear-float"></div>
 
-			<label for="email">Email:</label>
+			<label for="email" class="required">Email:</label>
 			<input type="text" id="email" name="email" /> <br />
 
-			<label for="phone">Phone:</label>
+			<div class="clear-float"></div>
+
+			<label for="phone" class="required">Phone:</label>
 			<input type="text" id="phone" name="phone" /> <br />
 
-			<label for="reason">Reason for Inquiry:</label>
+			<div class="clear-float"></div>
+
+			<label for="reason" class="required">Reason for Inquiry:</label>
 			<select id="reason" name="reason">
 				<option value="catering" selected>Catering</option>
 				<option value="party">Private Party</option>
@@ -39,11 +85,15 @@
 				<option value="other">Other</option>
 			</select> <br />
 
+			<div class="clear-float"></div>
+
 			<label for="info">Additional Information:</label>
 			<textarea id="info" name="info"></textarea> <br />
 
+			<div class="clear-float"></div>
+
 			<fieldset>
-				<legend>Have you been to the restaurant?</legend>
+				<legend class="required">Have you been to the restaurant?</legend>
 
 				<input type="radio" id="choice1" name="beenBefore" />
 				<label for="choice1">No</label>
@@ -52,8 +102,10 @@
 				<label for="choice2">Yes</label>
 			</fieldset> <br />
 
+			<div class="clear-float"></div>
+
 			<fieldset>
-				<legend>Best days to contact you:</legend>
+				<legend class="required">Best days to contact you:</legend>
 
 				<input type="checkbox" id="m" name="days" value="m"/>
 				<label for="m">M</label>
@@ -71,11 +123,14 @@
 				<label for="f">F</label>
 			</fieldset>
 
-			<input type="submit" value="Send Request" />
+			<div class="clear-float"></div>
+
+			<input type="submit" value="Send Request" id="submit"/>
+
+			<div class="clear-float"></div>
 		</form>
 
 		<footer>
-			<hr />
 			<p>123 Fake St, Fakesville, Texas, 12321</p>
 			<p>(123) 456 - 7890</p>
 		</footer>
