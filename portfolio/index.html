@@ -7,6 +7,33 @@
 <html lang="en">
 	<head>
 		<title>Elijah Kulesa's Portfolio</title>
+
+		<link href="styles/main.css" rel="stylesheet" type="text/css" />
+<style>
+	caption {
+		font-weight: bold;
+		font-size: 1.2em;
+		margin-bottom: 8px;
+	}
+	table, th, td {
+		border: 1px solid #2A2D34;
+		border-collapse: collapse;
+		padding: 5px 10px;
+	}
+	table {
+		width: 90%;
+		margin: auto;
+	}
+	tr {
+		height: 30px;
+		background-color: #738290;
+	}
+	th {
+		background-color: #2d3142;
+		color: #BFC0C0;
+	}
+</style>
+
 	</head>
 	<body>
 		<header>
@@ -14,12 +41,11 @@
 		</header>
 
 		<nav>
-			<hr />
 			<!-- We need to add links to projects.html, contact.html, and testimonials.html -->
 			<p><a href="projects.html">Projects</a></p>
 			<p><a href="testimonials.html">Testimonials</a></p>
 			<p><a href="contact.html">Contact Me</a></p>
-			<hr />
+			<div class="clear-float"></div>
 		</nav>
 
 		<section>
@@ -30,32 +56,44 @@
 				<p>Donec auctor est sed feugiat dapibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque at lacus eros. Curabitur luctus tincidunt nisl ac varius. Integer feugiat, mi vitae dictum facilisis, quam lectus blandit magna, a aliquet ipsum sem eget velit. Phasellus fermentum venenatis faucibus. Quisque venenatis felis eu elit posuere consequat. Mauris posuere posuere ultrices. Suspendisse ac rhoncus quam. Phasellus eget nulla diam. Curabitur eget viverra lectus. Nunc ut turpis ut dui congue volutpat sit amet quis felis. Sed tincidunt libero vitae neque pharetra sagittis. In aliquet vestibulum nibh, nec malesuada nisl iaculis sit amet. Ut lacus purus, rhoncus nec ullamcorper in, congue eu arcu.</p>
 			</article>
 
+			<div class="clear-float"></div>
+
 			<article id="past-experiences">
 				<h2>Past Experiences</h2>
 				<img src="images/experiences.jpg" alt="NYC cityscape" />
+				<div class="right-content">
 				<table>
 					<caption>Employment History</caption>
-					<tr>
-						<th>Years of Employment</th>
-						<th>Title</th>
-						<th>Company</th>
-					</tr>
-					<tr>
-						<td>2018-Present</td>
-						<td>Apprentice</td>
-						<td>The Software Guild</td>
-					</tr>
-					<tr>
-						<td>2017-2018</td>
-						<td>Recreation Worker</td>
-						<td>Coon Rapids Ice Center</td>
-					</tr>
+					<thead>
+						<tr>
+							<th>Years of Employment</th>
+							<th>Title</th>
+							<th>Company</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>2018-Present</td>
+							<td>Apprentice</td>
+							<td>The Software Guild</td>
+						</tr>
+						<tr>
+							<td>2017-2018</td>
+							<td>Recreation Worker</td>
+							<td>Coon Rapids Ice Center</td>
+						</tr>
+					</tbody>
 				</table>
+				</div>
+				<div class="clear-float"></div>
 			</article>
+
+			<div class="clear-float"></div>
 
 			<article>
 				<h2>Hobbies</h2>
 				<img src="images/hobbies.jpg" alt="Portrait of a Violin" />
+				<div class="right-content">
 				<ul>
 					<li>Games</li>
 					<ol>
@@ -83,11 +121,14 @@
 						<li>Violin</li>
 					</ol>
 				</ul>
+				</div>
+				<div class="clear-float"></div>
 			</article>
+
+			<div class="clear-float"></div>
 		</section>
 
 		<footer>
-			<hr />
 			<p>&copy; 2018 Elijah Kulesa. All rights reserved.</p>
 		</footer>
 	</body>

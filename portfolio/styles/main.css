@@ -1,0 +1,68 @@
+/*
+ * Creator: Elijah Kulesa
+ * Date created: 10/25/2018
+ * Date last modified:
+ */
+
+body {
+	background-color: #2a2d34;
+	font-family: arial, helvetica, sans-serif;
+	color: #BFC0C0;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+header, footer {
+	background-color: #2D3142;
+	height: 100px;
+	text-align: center;
+	padding: 30px 10px 20px 10px;
+}
+footer {
+	margin-top: 10px;
+}
+h1 {
+	font-size: 2.5em;
+}
+nav {
+	border-top: 3px dashed #738290;
+	border-bottom: 3px dashed #738290;
+	margin-top: 10px;
+}
+article img {
+	float:left;
+	max-width: 40%;
+}
+.clear-float {
+	clear:both;
+}
+.right-content {
+	float:left;
+}
+article {
+	margin 10px;
+}
+nav a {
+	background-color: #738290;
+	color: #BFC0C0;
+	padding: 8px;
+	border: thin solid #BFC0C0;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	margin: 20px;
+	width: 100px;
+	float:left;
+}
+nav a:hover {
+	background-color: #BFC0C0;
+	color: #738290;
+}
+nav a:active {
+	font-weight: bold;
+}
+nav a:visited {
+	color: #2d3142;
+	border-color: #2d3142;
+}
+
